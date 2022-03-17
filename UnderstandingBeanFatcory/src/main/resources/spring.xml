@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+
+	<bean id="alien" class="com.tp.UnderstandingBeanFatcory.Alien" autowire="byType">
+<!-- 		<constructor-arg  name="age" value="10" ></constructor-arg> -->
+<!-- 		<constructor-arg  name="com" ref="com" ></constructor-arg> -->
+		
+		<property name="age" value="10"></property>
+		<property name="value" value="20"></property>
+<!--   		<property name="com" ref="com"></property>  -->
+	</bean>
+  	<bean id="com" class="com.tp.UnderstandingBeanFatcory.Laptop" primary="true"></bean>  
+	<bean id="desktop" class="com.tp.UnderstandingBeanFatcory.Desktop"></bean>
+</beans>
