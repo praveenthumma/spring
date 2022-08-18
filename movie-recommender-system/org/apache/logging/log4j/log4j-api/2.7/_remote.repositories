@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Aug 09 18:39:12 IST 2022
+log4j-api-2.7.jar>nexus=
+log4j-api-2.7.pom>nexus=
